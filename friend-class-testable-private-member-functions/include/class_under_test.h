@@ -3,6 +3,9 @@
 
 class ClassUnderTest
 {
+  #ifdef TEST
+   friend class TestableClassUnderTest;
+  #endif
   public:
     int PublicMemberFunction(int multiplicand);
   protected:
