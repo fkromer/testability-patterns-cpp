@@ -1,4 +1,5 @@
-#include "class_under_test.h"  // includes cut and tcut
+#include "class_under_test.h"
+#include "testable_class_under_test.h"
 #include "gtest/gtest.h"
 
 TEST(PublicMemberFunctionTest, ExemplaryGoodCase) {
@@ -16,14 +17,27 @@ TEST(PublicMemberFunctionTest, ExemplaryGoodCase) {
 //  EXPECT_EQ(expectedDirectTestOutput, cut.ProtectedMemberFunction(directTestInput));
 //}
 
+TEST(ProtectedMemberFunctionTest, ExemplaryGoodCase) {
+  TestableClassUnderTest tcut;
+  int directTestInput = 1;
+  int expectedDirectTestOutput = 42;
+  EXPECT_EQ(expectedDirectTestOutput, tcut.ProtectedMemberFunction(directTestInput));
+}
+
 // trying to test a private member function like follows leads to errors during compilation -> is not testable
-//
 //TEST(PrivateMemberFunctionTest, ExemplaryGoodCase) {
 //  ClassUnderTest cut;
 //  int directTestInput = 1;
 //  int expectedDirectTestOutput = 42;
 //  EXPECT_EQ(expectedDirectTestOutput, cut.PrivateMemberFunction(directTestInput));
 //}
+
+TEST(PrivateMemberFunctionTest, ExemplaryGoodCase) {
+  TestableClassUnderTest tcut;
+  int directTestInput = 1;
+  int expectedDirectTestOutput = 42;
+  EXPECT_EQ(expectedDirectTestOutput, tcut.PrivateMemberFunction(directTestInput));
+}
 
 int main(int argc, char **argv) {
     testing::InitGoogleTest(&argc, argv);
