@@ -91,5 +91,7 @@ Status about which generic "Design for Testability" patterns are considered in a
 
 Status about which C++ specific "Design for Testability" patterns are considered in an example in this repository.
 
+- [ ] Dependency Injection
+  - [ ] [... using Variadic Templates](http://gpfault.net/posts/dependency-injection-cpp.txt.html)
 - [x] Testable protected member functions by using a test specifc derived class
 - [x] Testable private member functions by using a test specific friend class
