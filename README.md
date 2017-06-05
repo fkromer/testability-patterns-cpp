@@ -98,3 +98,4 @@ Status about which C++ specific "Design for Testability" patterns are considered
   - [ ] [... using a lambda calcullus with injected functors/predicates (implementation variant)](http://stackoverflow.com/questions/29365084/is-dependency-injection-useful-in-c)
 - [x] Testable protected member functions by using a test specifc derived class
 - [x] Testable private member functions by using a test specific friend class
+- [ ] Testable private member functions by using a test specific friend function
