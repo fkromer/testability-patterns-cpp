@@ -67,3 +67,29 @@ set CMake environment variable to enable finding gtest
 ## Style Guide
 
 [Google Style Guide](https://google.github.io/styleguide/cppguide.html)
+
+## TODO
+
+Status about which generic "Design for Testability" patterns are considered in an example in this repository.
+
+- [ ] Dependency Injection
+  - [ ] Constructor Injection (implementation variant)
+  - [ ] Parameter Injection (implementation variant)
+  - [ ] Setter Injection (implementation variant)
+- [ ] Dependency Lookup
+- [ ] Humble Object
+  - [ ] Poor Man's Humble Object (implementation variant)
+  - [ ] True Humble Object (implementation variant)
+  - [ ] Subclassed Humble Object (implementation variant)
+  - [ ] Humble Dialog (context variant)
+  - [ ] Humble Executable (context variant)
+  - [ ] Humble Transaction Controller (context variant)
+  - [ ] Humble Container Adapter (context variant)
+- [ ] Test Hook
+  - [ ] System Under Test Hook (implementation variant)
+  - [ ] Depended-on Component Hook (implementation variant)
+
+Status about which C++ specific "Design for Testability" patterns are considered in an example in this repository.
+
+- [x] Testable protected member functions by using a test specifc derived class
+- [x] Testable private member functions by using a test specific friend class
