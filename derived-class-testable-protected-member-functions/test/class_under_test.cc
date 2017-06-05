@@ -1,3 +1,5 @@
+// Copyright (C) 2017 Florian Kromer - MIT
+
 #include "class_under_test.h"
 #include "testable_class_under_test.h"
 #include "gtest/gtest.h"

@@ -1,3 +1,5 @@
+// Copyright (C) 2017 Florian Kromer - MIT
+
 #include "class_under_test.h"
 
 int ClassUnderTest::PublicMemberFunction(int multiplicand){

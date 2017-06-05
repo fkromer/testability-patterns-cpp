@@ -1,3 +1,5 @@
+// Copyright (C) 2017 Florian Kromer - MIT
+
 #ifndef CLASS_UNDER_TEST_H_
 #define CLASS_UNDER_TEST_H_
 
