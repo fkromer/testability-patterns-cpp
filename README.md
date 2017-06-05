@@ -92,6 +92,9 @@ Status about which generic "Design for Testability" patterns are considered in a
 Status about which C++ specific "Design for Testability" patterns are considered in an example in this repository.
 
 - [ ] Dependency Injection
-  - [ ] [... using Variadic Templates](http://gpfault.net/posts/dependency-injection-cpp.txt.html)
+  - [ ] [... using Variadic Templates (implementation variant)](http://gpfault.net/posts/dependency-injection-cpp.txt.html)
+  - [ ] [... using (smart) pointer to an object (implementation variant)](http://stackoverflow.com/questions/29365084/is-dependency-injection-useful-in-c)
+  - [ ] [... using a template argument for a policy (implementation variant)](http://stackoverflow.com/questions/29365084/is-dependency-injection-useful-in-c)
+  - [ ] [... using a lambda calcullus with injected functors/predicates (implementation variant)](http://stackoverflow.com/questions/29365084/is-dependency-injection-useful-in-c)
 - [x] Testable protected member functions by using a test specifc derived class
 - [x] Testable private member functions by using a test specific friend class
