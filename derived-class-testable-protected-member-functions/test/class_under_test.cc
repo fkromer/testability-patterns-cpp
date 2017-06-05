@@ -1,7 +1,7 @@
 // Copyright (C) 2017 Florian Kromer - MIT
 
-#include "class_under_test.h"
-#include "testable_class_under_test.h"
+#include "../include/class_under_test.h"
+#include "../include/testable_class_under_test.h"
 #include "gtest/gtest.h"
 
 // testing public member functions is not critical
@@ -13,12 +13,12 @@ TEST(PublicMemberFunctionTest, ExemplaryGoodCase) {
 }
 
 // trying to test a protected member function like follows leads to errors during compilation -> is not testable
-//TEST(ProtectedMemberFunctionTest, ExemplaryGoodCase) {
-//  ClassUnderTest cut;
-//  int directTestInput = 1;
-//  int expectedDirectTestOutput = 42;
-//  EXPECT_EQ(expectedDirectTestOutput, cut.ProtectedMemberFunction(directTestInput));
-//}
+// TEST(ProtectedMemberFunctionTest, ExemplaryGoodCase) {
+//   ClassUnderTest cut;
+//   int directTestInput = 1;
+//   int expectedDirectTestOutput = 42;
+//   EXPECT_EQ(expectedDirectTestOutput, cut.ProtectedMemberFunction(directTestInput));
+// }
 
 TEST(ProtectedMemberFunctionTest, ExemplaryGoodCase) {
   TestableClassUnderTest tcut;

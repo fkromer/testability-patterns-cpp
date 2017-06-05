@@ -1,14 +1,13 @@
 // Copyright (C) 2017 Florian Kromer - MIT
 
-#ifndef CLASS_UNDER_TEST_H_
-#define CLASS_UNDER_TEST_H_
+#ifndef DERIVED_CLASS_TESTABLE_PROTECTED_MEMBER_FUNCTIONS_INCLUDE_CLASS_UNDER_TEST_H_
+#define DERIVED_CLASS_TESTABLE_PROTECTED_MEMBER_FUNCTIONS_INCLUDE_CLASS_UNDER_TEST_H_
 
-class ClassUnderTest
-{
-  public:
-    int PublicMemberFunction(int multiplicand);
-  protected:
-    int ProtectedMemberFunction(int multiplicand);
+class ClassUnderTest {
+ public:
+  int PublicMemberFunction(int multiplicand);
+ protected:
+  int ProtectedMemberFunction(int multiplicand);
 };
 
-#endif  // CLASS_UNDER_TEST_H_
+#endif  // DERIVED_CLASS_TESTABLE_PROTECTED_MEMBER_FUNCTIONS_INCLUDE_CLASS_UNDER_TEST_H_

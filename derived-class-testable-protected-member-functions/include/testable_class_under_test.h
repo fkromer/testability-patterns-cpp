@@ -1,9 +1,9 @@
 // Copyright (C) 2017 Florian Kromer - MIT
 
-#ifndef TESTABLE_CLASS_UNDER_TEST_H_
-#define TESTABLE_CLASS_UNDER_TEST_H_
+#ifndef DERIVED_CLASS_TESTABLE_PROTECTED_MEMBER_FUNCTIONS_INCLUDE_TESTABLE_CLASS_UNDER_TEST_H_
+#define DERIVED_CLASS_TESTABLE_PROTECTED_MEMBER_FUNCTIONS_INCLUDE_TESTABLE_CLASS_UNDER_TEST_H_
 
-#include "class_under_test.h"
+#include "../include/class_under_test.h"
 
 class TestableClassUnderTest : public ClassUnderTest {
  public:
@@ -11,4 +11,4 @@ class TestableClassUnderTest : public ClassUnderTest {
   int ProtectedMemberFunction(int multiplicand);
 };
 
-#endif  // TESTABLE_CLASS_UNDER_TEST_H_
+#endif  // DERIVED_CLASS_TESTABLE_PROTECTED_MEMBER_FUNCTIONS_INCLUDE_TESTABLE_CLASS_UNDER_TEST_H_
