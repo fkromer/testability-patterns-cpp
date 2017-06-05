@@ -1,7 +1,7 @@
-#ifndef TESTABLE_CLASS_UNDER_TEST_H_
-#define TESTABLE_CLASS_UNDER_TEST_H_
+// Copyright (C) 2017 Florian Kromer - MIT
 
-//class ClassUnderTest;  // forward declaration required
+#ifndef FRIEND_CLASS_TESTABLE_PRIVATE_MEMBER_FUNCTIONS_INCLUDE_TESTABLE_CLASS_UNDER_TEST_H_
+#define FRIEND_CLASS_TESTABLE_PRIVATE_MEMBER_FUNCTIONS_INCLUDE_TESTABLE_CLASS_UNDER_TEST_H_
 
 class TestableClassUnderTest {
  public:
@@ -10,4 +10,4 @@ class TestableClassUnderTest {
   int PrivateMemberFunction(int multiplicand);
 };
 
-#endif  // TESTABLE_CLASS_UNDER_TEST_H_
+#endif  // FRIEND_CLASS_TESTABLE_PRIVATE_MEMBER_FUNCTIONS_INCLUDE_TESTABLE_CLASS_UNDER_TEST_H_

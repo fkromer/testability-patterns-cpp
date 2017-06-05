@@ -26,10 +26,10 @@ GTEST_ROOT. The calls in the CMakeLists.txt files locate gtest
 
 test build
 
-    cd <subdirectory>
-    cmake .
+    cd <subdirectory>/build
+    cmake ..
     make
-    ./<executable>
+    ./unit_tests
 
 ## Build Environment
 
