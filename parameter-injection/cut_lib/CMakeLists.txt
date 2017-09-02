@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.5.1)
+include_directories(include)
+file(GLOB SOURCES "src/*.cc")
+add_library(classUnderTest SHARED ${SOURCES})
+install(TARGETS classUnderTest DESTINATION /usr/lib)

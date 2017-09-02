@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.5.1)
+project(parameter-injection)
+include_directories(../include)
+file(GLOB SOURCES "*.cc")
+add_executable(parameter-injection ${SOURCES})
